@@ -8,7 +8,7 @@ type Item = {
 };
 
 const getItems = (count: number) =>
-  Array.from({ length: count }, (v, k) => k).map((k) => ({
+  Array.from({ length: count }, (_, k) => k).map((k) => ({
     id: `item-${k}`,
     content: `item ${k}`,
   }));
